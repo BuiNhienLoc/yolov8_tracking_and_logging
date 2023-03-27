@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+*.pt
+*.json
+*.pos
+./fluentd/file/*
+./fluentd/logs/*
+./fluentd/output/*
+./fluentd/tmp/*.pos
