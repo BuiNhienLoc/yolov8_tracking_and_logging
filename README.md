@@ -1,4 +1,4 @@
-# Yolov8_tracking_and_logging
+# yolov8_tracking_and_logging
 Logging application for a hypothetically traffic system using Yolov8 for tracking
 
 ## 💻 Install
