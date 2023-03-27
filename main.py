@@ -168,7 +168,7 @@ def trigger2(self, detections: Detections, result):
 
 def main():
     # ClearMemory()
-    model = YOLO('yolov8s.pt')
+    model = YOLO('yolov8s.pt') # yolov8s.pt, yolov8m.pt, yolov8l.pt, yolov8x.pt
     line_zone1 = sv.LineZone(START1, END1)
     line_zone1_annotator = sv.LineZoneAnnotator(
         thickness=2,
@@ -204,7 +204,7 @@ def main():
         text_scale=0.5,
     )
 
-    for result in model.track(source="traffic.mp4", imgsz=320, show=True, stream=True):
+    for result in model.track(source="traffic.mp4", imgsz=320, show=True, stream=True): # traffic.mp4, test.mp4 or 0 for webcam
         frame = result.orig_img
         detections = sv.Detections.from_yolov8(result)
 
